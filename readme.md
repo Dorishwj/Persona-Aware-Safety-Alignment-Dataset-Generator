@@ -91,11 +91,11 @@ python main.py
 
 ### 💡 小贴士：
 
-1.  **关于 `engine.py` 的模型设置**：
-    * 在实际操作时我在**Attacker 使用 Pro 模型，Target/Evaluator 使用 Flash 模型**，这是性价比较高的方案。
-2.  **关于 `batch_size`**：
-    * 如果你开启了 Pay-as-you-go，可以在 `main.py` 里把并发调高；如果没有开启，请严格遵守免费版的限流。
-3.  **数据备份**：
-    * 脚本在每生成一个样本后都会实时保存到 JSON。如果中途断网，你可以修改 `main.py` 的起始范围继续跑，不会丢失已有的成果。
+1.  关于 `engine.py` 的模型设置：
+    在实际操作时我在Attacker 使用 Pro 模型，Target/Evaluator 使用 Flash 模型，这是性价比较高的方案。
+2.  关于 `batch_size`：
+    如果开启了 Pay-as-you-go，可以在 `main.py` 里把并发调高；如果没有开启，请严格遵守免费版的限流。
+3.  数据备份：
+    脚本在每生成一个样本后都会实时保存到 JSON。如果中途断网，你可以修改 `main.py` 的起始范围继续跑，不会丢失已有的成果。
 
 ```
